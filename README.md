@@ -1,12 +1,11 @@
----
-## UPDATE Oktober 2025
-- Menambahkan Dockerfile untuk menjalankan scraper secara otomatis di container
-- Menambahkan docker-compose.yml agar scraping otomatis dan database Postgres siap reporting
-- Scraper dapat dijalankan tanpa web app, hasil data bisa diekspor langsung ke Postgres (siap untuk visualisasi BI/Looker)
-- Contoh penggunaan:
-   - `docker-compose up --build` untuk menjalankan full pipeline
-   - Data hasil scraping siap direporting ke BI tools
----
+## UPDATE October 2025
+
+- Added Dockerfile for auto-running the scraper in a container
+- Added docker-compose.yml so scraping and Postgres DB can run together, ready for reporting
+- Scraper works without a web app, results can be sent directly to Postgres database (ready for BI/Looker visualization)
+- Usage example:
+  - `docker-compose up --build` to run the full pipeline
+  - Scraped data is ready for BI reporting
 
 # UPDATE August 2023.
 New version includes OpenAI integration for cover letter generation. See below for how to configure config.json file.
